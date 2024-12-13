@@ -74,7 +74,7 @@ else # PLATFORM=web
   SIMULATOR ?= epsilon_simulators/web/epsilon.html
 endif
 
-NWLINK = nwlink
+NWLINK = npx --yes -- nwlink@0.0.18
 BUILD_DIR = output/$(PLATFORM)
 
 define object_for
